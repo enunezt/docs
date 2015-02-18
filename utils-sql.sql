@@ -9,4 +9,4 @@ from tabla1 t1,
     t1.ide_casilla=t2.ide_casilla)
   where t1.ide_formato = XXXX
   ) a
-where t1.ide_concepto = a.ide_concepto and ide_formato = 1248;
+where t1.ide_concepto = a.ide_concepto and ide_formato = YYYY;
