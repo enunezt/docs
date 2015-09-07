@@ -1,0 +1,50 @@
+
+1. PROCESO DE INGENIERIA INVERSA
+
+- Originado por desincornización de fuentes.
+- Reconstrucción del sistema Actual.
+	- Se evidencian artefactos Externos. (UIS)
+	- Arquitectura simple.
+	
+2. DIAGNOSTICO SOBRE PRUEBAS Y DESARROLLO DE GOSLIN
+
+- Pruebas Funcionales de la totalidad del sistema reconstruido.
+- SI 100% Ok --> Continuidad con proceso de mantenimiento.
+  NO 100% --> Consultoría sobre los procesos que no funcionen.
+				- Implica inventario de Proceso para definir Tiempo y costo.
+
+
+3. NUEVA ARQUITECTURA PARA CARTERA
+
+- Teniendo en cuenta la arquitectura de Goslin se define crear una nueva arquitectura para construir el modulo de cartera.
+- Aruitectura 3 capas bajo el estandar JEE5. (Especificación para crear sistemas para entornos Empresariales)
+  -Robusta
+  -Escalable
+  -Segura
+  -Auditable
+- Probado funcionamiento en la Nube.
+- Utiliza componente actualizados.
+- Iterfaz adaptable a dispositivos moviles
+
+Se hace uso de software libre para reducir costos de licencia.  JBOSS 7 (RED HAT), POSTGRES (BASE DE DATOS)
+
+3.1 ESTADO ACTUAL DE DESARROLLO DE CARTERA
+- Presentación  breve de cartera.
+
+4. PPOPUESTA DE DESARROLLO 1 : MIGRACION A NUEVVA ARQUITECTURA
+
+- Consiste en tomar el sistema actual y verificar funcionalmente proceso por proceso y crearlo con la nueva arquitectura.
+- Modularizar  y priorizar funcionalmete los procesos del sistema.
+- Disposición de usuarios funcionales.
+- ??Estimar tiempo y costos
+
+
+5. PROPUESTA DE DESARROLLO 2 : INVENTARIO DE PROCESOS CON CICLO COMPLETO DEL PROCESO DE DESARROLLO.
+
+- No considerar el sistema actual.
+- Creación de un nuevo modelo de datos.
+- Se desarrolla considerando la nueva arquitectura.
+- Inventario de los proceso que requiere el sistema. (Documento detallado de cada proceso indicando relación y dependencias entre si)
+- Disponibilidad total de usuarios durante el proceso de levantamiento de requerimientos.
+- Con alcance de procesos a desarrollar se define tiempor y costo. 
+
