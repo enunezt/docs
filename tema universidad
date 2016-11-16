@@ -48,3 +48,17 @@ Se hace uso de software libre para reducir costos de licencia.  JBOSS 7 (RED HAT
 - Disponibilidad total de usuarios durante el proceso de levantamiento de requerimientos.
 - Con alcance de procesos a desarrollar se define tiempor y costo. 
 
+
+if(ipMaquina == null || ipMaquina.equals("")){
+			ipMaquina = getRequest().getHeader("x-forwarded-for"); 
+			if(ipMaquina == null || ipMaquina.length() == 0 || "unknown".equalsIgnoreCase(ipMaquina)) { 
+				ipMaquina = getRequest().getHeader("Proxy-Client-IP"); 
+			} 
+			if(ipMaquina == null || ipMaquina.length() == 0 || "unknown".equalsIgnoreCase(ipMaquina)) { 
+				ipMaquina = getRequest().getHeader("WL-Proxy-Client-IP"); 
+			} 
+			if(ipMaquina == null || ipMaquina.length() == 0 || "unknown".equalsIgnoreCase(ipMaquina)) { 
+				ipMaquina = getRequest().getRemoteAddr(); 
+			} 
+		}
+
