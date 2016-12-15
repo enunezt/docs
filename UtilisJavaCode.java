@@ -68,3 +68,5 @@ if(ipMaquina == null || ipMaquina.equals("")){
 				ipMaquina = getRequest().getRemoteAddr(); 
 			} 
 }
+	
+//https://github.com/kwart/secured-webapp-template.git
