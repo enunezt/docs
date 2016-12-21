@@ -22,5 +22,5 @@ scaffold-generate --provider Faces --targets org.cdbookstore.model.* ;
 scaffold-generate --provider Faces --targets org.cdbookstore.model.Book ;
 scaffold-generate --provider Faces --targets org.cdbookstore.model.Author 
 rest-generate-endpoints-from-entities --targets org.cdbookstore.model.* ;
-bulild;
-
+cd D:/GIT/cdbookstore2
+build;
