@@ -92,3 +92,4 @@ static Subject getSubject() {
    } 
 	
 //https://github.com/kwart/secured-webapp-template.git
+	https://github.com/tharinduj/jboss-as-quickstart
