@@ -79,4 +79,16 @@ Subject subject = org.jboss.security.SecurityContextAssociation.getSubject();
             // ...
         }
 	
+static Subject getSubject() { 
+       if (System.getSecurityManager() == null) { 
+           return SecurityContextAssociation.getSubject(); 
+       } 
+        
+       return AccessController.doPrivileged(new PrivilegedAction<Subject>() {  
+           public Subject run() { 
+               return SecurityContextAssociation.getSubject(); 
+           } 
+       });         
+   } 
+	
 //https://github.com/kwart/secured-webapp-template.git
