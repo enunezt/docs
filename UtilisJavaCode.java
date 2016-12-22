@@ -69,4 +69,14 @@ if(ipMaquina == null || ipMaquina.equals("")){
 			} 
 }
 	
+	
+Subject subject = org.jboss.security.SecurityContextAssociation.getSubject();
+        Optional<Group> rolesGroup = subject.getPrincipals(Group.class).stream().filter(p -> "Roles".equals(p.getName()))
+                .findFirst();
+        if (rolesGroup.isPresent()) {
+            List<String> roleNames = Collections.list(rolesGroup.get().members()).stream().map(p -> p.getName())
+                    .collect(Collectors.toList());
+            // ...
+        }
+	
 //https://github.com/kwart/secured-webapp-template.git
